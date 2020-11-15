@@ -5,9 +5,14 @@
 >   Se dados sobre os clientes estão disponíveis, podemos aplicar  Ciência de Dados para segmentar o mercado.
 >   Fomos contratados por um banco de NYC para analisar os dados e  dividir os clientes em pelo menos 3 grupos.  
   
--   CUSTID: Identificação do cliente
--   BALANCE: Saldo para fazer compras
--   BALANCE_FREQUENCY: Frequência que o saldo é atualizado (1 = frequente, 0 = não frequente)
+-   Para que as empresas sejam competitivas e crescerem, o uso de  IA/ML é muito importante para previsões de vendas futuras.
+-   Modelos de previsão de vendas futuras baseados em dados do passado devem considerar efeitos sazonais, como por exemplo: demanda, feriados, promoções e concorrência.
+-   Neste projeto, nós trabalhamos como cientista de dados de uma  rede de lojas físicas e temos dados de 1.115 lojas!
+-   O objetivo é prever vendas futuras.
+
+**DADOS DAS TRANSAÇÕES**
+
+-   Id: identificador da transação (loja + data)
 -   PURCHASES: Quantidade de compras realizadas
 -   ONEOFFPURCHASES: Quantidade de compras feitas “de uma só vez” (sem  parcelar)
 -   INSTALLMENTS_PURCHASES: Quantidade de compras parceladas
