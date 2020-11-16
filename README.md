@@ -10,6 +10,8 @@
 -   Neste projeto, nós trabalhamos como cientista de dados de uma  rede de lojas físicas e temos dados de 1.115 lojas!
 -   O objetivo é prever vendas futuras.
 
+![Vendas](https://github.com/callacius/Data_Science_Vendas/blob/main/images/01.png?raw=true)
+
 **DADOS DAS TRANSAÇÕES**
 -   Id: identificador da transação (loja + data).
 -   Loja: identificador único da loja.
@@ -37,4 +39,4 @@ Fontes
   https://research.fb.com/prophet-forecasting-at-scale/
   https://facebook.github.io/prophet/docs/quick_start.html#python-api
 
-Fonte: ![Curso Udemy](**https://www.udemy.com/course/ciencia-de-dados-para-empresas-e-negocios**)
+Fonte: **https://www.udemy.com/course/ciencia-de-dados-para-empresas-e-negocios**
