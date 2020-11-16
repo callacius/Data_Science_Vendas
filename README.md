@@ -11,53 +11,30 @@
 -   O objetivo é prever vendas futuras.
 
 **DADOS DAS TRANSAÇÕES**
+-   Id: identificador da transação (loja + data).
+-   Loja: identificador único da loja.
+-   Sales: vendas/dia (objetivo).
+-   Customers: número de clientes no dia.
+-   Open: boleano que indica se a loja estava aberta ou  fechada (1 = aberta, 0 = fechada).
+-   Promo: se existe uma promoção no dia.
+-   StateHoliday: feriado (a = feriado público, b = Páscoa, c = Natal, 0 = nenhum).
+-   SchoolHoliday: feriado escolar.
+-   StoreType: tipo da loja (a, b, c, d).
+-   Assortment: a = basic, b = extra, c = extended.
+-   CompetitionDistance (metros): distância para a loja  concorrente mais perto.
+-   CompetitionOpenSince [Month/Year]: data que a loja concorrente foi aberta.
+-   Promo2: promoção contínua e consecutiva em algumas lojas(0 = não está participando, 1 = está participando)
+-   Promo2Since [Year/Week]: data quando a loja começou a  participar da Promo2.
+-   PromoInterval: intervalos consecutivos que a Promo2 é  iniciada (meses). Exemplo: "Feb,May,Aug,Nov" indica que  cada “round” da promoção começa em
+February, May, August, November
+**FACEBOOK PROPHET (PROFETA)**
+-   É um software open source lançado pelo time de Ciência de Dados do Facebook.
+-   Permite a previsão de séries temporais baseado em “regressão  aditiva”.
+-   Tendências não lineares podem ser descobertas anualmente,  semanalmente, diariamente(considera feriados).
+-   Funciona melhor com efeitos sazonais e com grande quantidade de dados.
 
--   Id: identificador da transação (loja + data)
--   PURCHASES: Quantidade de compras realizadas
--   ONEOFFPURCHASES: Quantidade de compras feitas “de uma só vez” (sem  parcelar)
--   INSTALLMENTS_PURCHASES: Quantidade de compras parceladas
--   CASH_ADVANCE: Dinheiro adiantado
--   PURCHASES_FREQUENCY: Frequência das compras (entre 1 e 0)
--   ONEOFF_PURCHASES_FREQUENCY: Frequência de compras à vista (entre 1 e  0)
--   PURCHASES_INSTALLMENTS_FREQUENCY: Frequência de compras parceladas  (entre 1 e 0)
--   CASH_ADVANCE_FREQUENCY: Frequência de saques de dinheiro adiantado
--   CASH_ADVANCE_TRX: Número de transações feitas como "Cash in Advance"
--   PURCHASES_TRX: Número de compras
--   CREDIT_LIMIT: Limite do cartão de crédito
--   PAYMENTS: Valor pago
--   MINIMUM_PAYMENTS: Valor mínimo pago
--   PRC_FULL_PAYMENT: Percentual de pagamentos da fatura “completa”
--   TENURE: Posse do titular do cartão
-
-
-1.  **INTUIÇÃO K-MEANS**
--   Algoritmo não supervisionado (clustering - agrupamento)
--   Os registros são agrupados baseado em atributos similares, por meio do  cálculo da Distância Euclidiana
-![Intuição k-means](https://github.com/callacius/Data_Science_Marketing/blob/main/images/01.png?raw=true)
-![Intuição k-means](https://github.com/callacius/Data_Science_Marketing/blob/main/images/02.png?raw=true)
-
-2.  **DEFINIÇÃO DO NÚMERO DE GRUPOS: “ELBOW METHOD”  (MÉTODO DO COTOVELO)**
-![Elbow Method](https://github.com/callacius/Data_Science_Marketing/blob/main/images/03.png?raw=true)
-![Elbow Method](https://github.com/callacius/Data_Science_Marketing/blob/main/images/04.png?raw=true)
-![Elbow Method](https://github.com/callacius/Data_Science_Marketing/blob/main/images/05.png?raw=true)
-![Elbow Method](https://github.com/callacius/Data_Science_Marketing/blob/main/images/06.png?raw=true)
-![Elbow Method](https://github.com/callacius/Data_Science_Marketing/blob/main/images/07.png?raw=true)
-
-3.  **PRINCIPAL COMPONENT ANALYSIS: VISÃO GERAL**
--   PCA é um algoritmo de aprendizagem não supervisionada.
--   Aplica redução de dimensionalidade, porém, tenta manter as informações  originais com as mesmas características.
--   Encontra um novo conjunto de características que são chamados de  componentes.
--   Os componentes são criados por meio das características não correlacionadas.
-![component Analysis](https://github.com/callacius/Data_Science_Marketing/blob/main/images/08.png?raw=true)
-
-4.  **AUTOENCODERS – INTUIÇÃO**
--   São um tipo de redes neurais artificiais para codificar dados.
--   Utiliza a mesma entrada e a mesma saída para comparar os resultados
-![AutoEncoders](https://github.com/callacius/Data_Science_Marketing/blob/main/images/09.png?raw=true)
-
-**CAMADAS DO AUTOENCODER**
--   Versão comprimida da informação na camada do meio (codificação).
--   Funcionam se existir correlação entre os dados de entrada (resultados  ruins se os dados de entrada são todos independentes).
-![AutoEncoders](https://github.com/callacius/Data_Science_Marketing/blob/main/images/10.png?raw=true)
+Fontes
+  https://research.fb.com/prophet-forecasting-at-scale/
+  https://facebook.github.io/prophet/docs/quick_start.html#python-api
 
 Fonte: ![Curso Udemy](**https://www.udemy.com/course/ciencia-de-dados-para-empresas-e-negocios**?raw=true)
