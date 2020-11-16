@@ -37,4 +37,4 @@ Fontes
   https://research.fb.com/prophet-forecasting-at-scale/
   https://facebook.github.io/prophet/docs/quick_start.html#python-api
 
-Fonte: ![Curso Udemy](**https://www.udemy.com/course/ciencia-de-dados-para-empresas-e-negocios**?raw=true)
+Fonte: ![Curso Udemy](**https://www.udemy.com/course/ciencia-de-dados-para-empresas-e-negocios**)
